@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website is Developing</title>
+<style>
+  body { margin:0; padding:0; overflow:hidden; background: radial-gradient(circle at bottom,#0a0a0a,#000); font-family:Arial,sans-serif; color:#00ffcc; display:flex; justify-content:center; align-items:center; height:100vh; text-align:center; }
+  h1 { font-size:3em; text-shadow:0 0 10px #00ffcc,0 0 20px #00ffcc,0 0 30px #00ffcc; z-index:10; position:relative; }
+  .star { position:absolute; width:2px; height:2px; background:white; border-radius:50%; animation:twinkle 2s infinite; }
+  @keyframes twinkle { 0%,100%{opacity:0.5;} 50%{opacity:1;} }
+  .planet { position:absolute; border-radius:50%; animation:orbit linear infinite; }
+  .planet1 { width:60px; height:60px; background:#ff4500; top:30%; left:40%; animation-duration:20s; }
+  .planet2 { width:40px; height:40px; background:#1e90ff; top:60%; left:70%; animation-duration:30s; }
+  @keyframes orbit { 0%{transform:rotate(0deg) translateX(50px) rotate(0deg);} 100%{transform:rotate(360deg) translateX(50px) rotate(-360deg);} }
+</style>
+</head>
+<body>
+<h1>Website is Developing</h1>
+<script>
+  const starsCount = 150;
+  for(let i=0;i<starsCount;i++){
+    const star=document.createElement('d
